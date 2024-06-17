@@ -1,7 +1,7 @@
 import React from "react";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import about from "../../../public/images/mme/home/about/about.png";
+import about from "../../../../public/images/mme/home/about/about.png";
 import Image from "next/image";
 
 const About: React.FC = () => {

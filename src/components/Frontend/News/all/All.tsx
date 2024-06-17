@@ -4,7 +4,7 @@ import {
   faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import news from "../../../../public/images/mme/News1.png";
+import news from "../../../../../public/images/mme/News1.png";
 import Image from "next/image";
 import React from "react";
 

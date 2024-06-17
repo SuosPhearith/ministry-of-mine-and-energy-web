@@ -2,10 +2,10 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import dam1 from "../../../public/images/mme/dam1.jpeg";
-import dam2 from "../../../public/images/mme/dam2.jpeg";
-import dam3 from "../../../public/images/mme/dam3.jpeg";
-import dam4 from "../../../public/images/mme/dam4.jpeg";
+import dam1 from "../../../../public/images/mme/dam1.jpeg";
+import dam2 from "../../../../public/images/mme/dam2.jpeg";
+import dam3 from "../../../../public/images/mme/dam3.jpeg";
+import dam4 from "../../../../public/images/mme/dam4.jpeg";
 
 const Hydropower = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

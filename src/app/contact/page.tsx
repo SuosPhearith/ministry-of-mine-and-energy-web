@@ -1,14 +1,10 @@
-import Contact from "@/components/Contact/Contact";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import Contact from "@/components/Frontend/Contact/Contact";
 import React from "react";
 
 const page: React.FC = () => {
   return (
     <main>
-      <Navbar />
       <Contact />
-      <Footer />
     </main>
   );
 };

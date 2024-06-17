@@ -1,14 +1,10 @@
-import Document from "@/components/Document/Document";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import Document from "@/components/Frontend/Document/Document";
 import React from "react";
 
 const page: React.FC = () => {
   return (
     <main>
-      <Navbar />
       <Document />
-      <Footer />
     </main>
   );
 };

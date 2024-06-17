@@ -36,6 +36,11 @@ const DropdownAbout = () => {
     return () => document.removeEventListener("keydown", keyHandler);
   });
 
+  // Function to close dropdown on link click
+  const handleLinkClick = () => {
+    setDropdownOpen(false);
+  };
+
   return (
     <div className="relative z-99999">
       <div
@@ -76,6 +81,7 @@ const DropdownAbout = () => {
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/about/mission"
+              onClick={handleLinkClick}
             >
               សាវដា និងបេសកម្ម
             </Link>
@@ -84,6 +90,7 @@ const DropdownAbout = () => {
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/about/minister"
+              onClick={handleLinkClick}
             >
               អំពីឯកត្តមរដ្ឋមន្ត្រី
             </Link>
@@ -92,14 +99,16 @@ const DropdownAbout = () => {
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/about/structure"
+              onClick={handleLinkClick}
             >
-              រចនាសម្ព័ន្
+              រចនាសម្ព័ន្ធ
             </Link>
           </li>
           <li>
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/about/management"
+              onClick={handleLinkClick}
             >
               ថ្នាក់ដឹកនាំ
             </Link>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import minister from "../../../../public/images/mme/HE1-1.png";
+import minister from "../../../../../public/images/mme/HE1-1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 

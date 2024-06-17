@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import minister from "../../../../public/images/mme/HE1.jpg";
-import user from "../../../../public/images/mme/user.png";
+import minister from "../../../../../public/images/mme/HE1.jpg";
+import user from "../../../../../public/images/mme/user.png";
 
 const users = [
   { id: 1, name: "Name" },

@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import card1 from "../../../public/images/mme/Carousel1.png";
-import card2 from "../../../public/images/mme/Carousel2.png";
-import card3 from "../../../public/images/mme/Carousel3.png";
-import card4 from "../../../public/images/mme/Carousel4.png";
-import card5 from "../../../public/images/mme/Carousel5.png";
+import card1 from "../../../../public/images/mme/Carousel1.png";
+import card2 from "../../../../public/images/mme/Carousel2.png";
+import card3 from "../../../../public/images/mme/Carousel3.png";
+import card4 from "../../../../public/images/mme/Carousel4.png";
+import card5 from "../../../../public/images/mme/Carousel5.png";
 import Carousel from "./Carousel/Carousel";
 
 const imagesItems = [

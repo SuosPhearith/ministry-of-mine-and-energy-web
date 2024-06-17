@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../../../public/images/mme/logo-white.png";
-import kh from "../../../public/images/mme/flag/kh.png";
+import logo from "../../../../public/images/mme/logo-white.png";
+import kh from "../../../../public/images/mme/flag/kh.png";
 import Image from "next/image";
 import Link from "next/link";
 import DropdownAbout from "./header/DropdownAbout";
@@ -23,11 +23,12 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-9999">
       <nav className="flex w-full items-center justify-center bg-primary text-white shadow-md">
         <div className="flex w-[80%] items-center justify-between py-2 max-[1300px]:py-1 max-[600px]:w-[90%]">
-          <div className="max-w-[250px] max-[600px]:max-w-[200px]">
+          <Link href="/" className="max-w-[250px] max-[600px]:max-w-[200px]">
             <Image src={logo} alt="logo" />
-          </div>
+          </Link>
           <div className="flex h-full w-[70%] items-center justify-between max-[1200px]:hidden">
             <Link
+              onClick={() => setIsMenuOpen(false)}
               href="/"
               className={
                 pathname === "/"
@@ -39,6 +40,7 @@ const Navbar: React.FC = () => {
             </Link>
             <DropdownAbout />
             <Link
+              onClick={() => setIsMenuOpen(false)}
               href="/document"
               className={
                 pathname === "/document"
@@ -50,6 +52,7 @@ const Navbar: React.FC = () => {
             </Link>
             <DropdownAction />
             <Link
+              onClick={() => setIsMenuOpen(false)}
               href="/service"
               className={
                 pathname === "/service"
@@ -60,6 +63,7 @@ const Navbar: React.FC = () => {
               សេវាសាធារណៈ
             </Link>
             <Link
+              onClick={() => setIsMenuOpen(false)}
               href="/contact"
               className={
                 pathname === "/contact"
@@ -69,7 +73,7 @@ const Navbar: React.FC = () => {
             >
               ទំនាក់ទំនង
             </Link>
-            <Link href="">
+            <Link onClick={() => setIsMenuOpen(false)} href="">
               <Image width={20} src={kh} alt="flag" />
             </Link>
           </div>
@@ -96,7 +100,11 @@ const Navbar: React.FC = () => {
           />
         </div>
         <ul className="mx-auto mt-8 flex w-full flex-col gap-2">
-          <Link href="/" className="bg-preprimary">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/"
+            className="bg-preprimary"
+          >
             <details className="group">
               <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
                 <span className="flex gap-2">
@@ -129,24 +137,28 @@ const Navbar: React.FC = () => {
               <article className="px-4 pb-4">
                 <ul className="mt-4 flex flex-col gap-4 pl-2">
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/about/mission"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
                     សាវដា និងបេសកម្ម
                   </Link>
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/about/minister"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
                     អំពីឯកត្តមរដ្ឋមន្ត្រី
                   </Link>
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/about/structure"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
                     រចនាសម្ព័ន្
                   </Link>
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/about/management"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
@@ -156,7 +168,11 @@ const Navbar: React.FC = () => {
               </article>
             </details>
           </li>
-          <Link href="/document" className="bg-preprimary">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/document"
+            className="bg-preprimary"
+          >
             <details className="group">
               <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
                 <span className="flex gap-2">
@@ -189,12 +205,14 @@ const Navbar: React.FC = () => {
               <article className="px-4 pb-4">
                 <ul className="mt-4 flex flex-col gap-4 pl-2">
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/news/minister"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
                     ថ្នាក់ដឹកនាំ
                   </Link>
                   <Link
+                    onClick={() => setIsMenuOpen(false)}
                     href="/news/all"
                     className="flex gap-2 rounded-md px-4 py-2 hover:bg-primary"
                   >
@@ -204,7 +222,11 @@ const Navbar: React.FC = () => {
               </article>
             </details>
           </li>
-          <Link href="/service" className="bg-preprimary">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="/service"
+            className="bg-preprimary"
+          >
             <details className="group">
               <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
                 <span className="flex gap-2">
@@ -213,7 +235,11 @@ const Navbar: React.FC = () => {
               </summary>
             </details>
           </Link>
-          <Link href="contact" className="bg-preprimary">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href="contact"
+            className="bg-preprimary"
+          >
             <details className="group">
               <summary className="flex items-center justify-between gap-2 p-2 font-medium marker:content-none hover:cursor-pointer">
                 <span className="flex gap-2">

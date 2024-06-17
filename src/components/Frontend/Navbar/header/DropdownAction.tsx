@@ -26,6 +26,11 @@ const DropdownAction = () => {
     return () => document.removeEventListener("click", clickHandler);
   });
 
+  // Function to close dropdown on link click
+  const handleLinkClick = () => {
+    setDropdownOpen(false);
+  };
+
   // close if the esc key is pressed
   useEffect(() => {
     const keyHandler = ({ keyCode }: KeyboardEvent) => {
@@ -76,6 +81,7 @@ const DropdownAction = () => {
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/news/minister"
+              onClick={handleLinkClick}
             >
               ថ្នាក់ដឹកនាំ
             </Link>
@@ -84,6 +90,7 @@ const DropdownAction = () => {
             <Link
               className="flex gap-4.5 border-t border-stroke px-4.5 py-3 text-black hover:bg-gray hover:text-primary dark:border-strokedark dark:hover:bg-meta-4"
               href="/news/all"
+              onClick={handleLinkClick}
             >
               ព័ត៌មាន
             </Link>

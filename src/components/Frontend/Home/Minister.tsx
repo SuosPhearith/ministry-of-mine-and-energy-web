@@ -1,4 +1,4 @@
-import about from "../../../public/images/mme/Video.png";
+import about from "../../../../public/images/mme/Video.png";
 import Image from "next/image";
 import React from "react";
 

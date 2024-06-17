@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../../../public/images/mme/MME_Logo.png"; // Make sure to adjust the path to your image
+import logo from "../../../../public/images/mme/MME_Logo.png"; // Make sure to adjust the path to your image
 
 const Service = () => {
   const items = [

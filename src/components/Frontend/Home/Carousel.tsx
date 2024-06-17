@@ -2,7 +2,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import carousel from "../../../public/images/mme/carousel/carousel.png";
+import carousel from "../../../../public/images/mme/carousel/carousel.png";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

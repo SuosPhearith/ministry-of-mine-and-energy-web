@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../../public/images/mme/Partner 1.png";
 import Image from "next/image";
 const parters = [
   { image: "/images/mme/Partner 1.png" },

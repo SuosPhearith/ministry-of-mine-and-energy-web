@@ -1,11 +1,11 @@
 import React from "react";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dam4 from "../../../../public/images/mme/dam4.jpeg";
-import dam5 from "../../../../public/images/mme/dam5.jpg";
-import building from "../../../../public/images/mme/MME-Building.png";
-import he1 from "../../../../public/images/mme/HE1.jpg";
-import he2 from "../../../../public/images/mme/HE2.jpg";
+import dam4 from "../../../../../public/images/mme/dam4.jpeg";
+import dam5 from "../../../../../public/images/mme/dam5.jpg";
+import building from "../../../../../public/images/mme/MME-Building.png";
+import he1 from "../../../../../public/images/mme/HE1.jpg";
+import he2 from "../../../../../public/images/mme/HE2.jpg";
 import Image from "next/image";
 
 const Mission: React.FC = () => {

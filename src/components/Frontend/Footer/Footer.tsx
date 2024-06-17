@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import logo from "../../../public/images/mme/logo/logo.png";
-import telegram from "../../../public/images/mme/footer/telegram.svg";
-import facebook from "../../../public/images/mme/footer/facebook.svg";
-import youtube from "../../../public/images/mme/footer/youtube.svg";
+import logo from "../../../../public/images/mme/logo/logo.png";
+import telegram from "../../../../public/images/mme/footer/telegram.svg";
+import facebook from "../../../../public/images/mme/footer/facebook.svg";
+import youtube from "../../../../public/images/mme/footer/youtube.svg";
 import {
   faLocationDot,
   faMinus,
