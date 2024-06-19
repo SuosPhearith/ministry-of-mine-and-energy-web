@@ -3,15 +3,17 @@ import React, { useState } from "react";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../../../public/images/mme/logo-white.png";
-import kh from "../../../../public/images/mme/flag/kh.png";
 import Image from "next/image";
 import Link from "next/link";
 import DropdownAbout from "./header/DropdownAbout";
 import DropdownAction from "./header/DropdownAction";
 import { usePathname } from "next/navigation";
+import LocaleSwitcher from "./header/LocaleSwitcher";
+import { useTranslations } from "next-intl";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
 
   const pathname = usePathname();
 
@@ -36,7 +38,7 @@ const Navbar: React.FC = () => {
                   : "text-white hover:text-warning"
               }
             >
-              ទំព័រដើម
+              {t("home")}
             </Link>
             <DropdownAbout />
             <Link
@@ -73,9 +75,9 @@ const Navbar: React.FC = () => {
             >
               ទំនាក់ទំនង
             </Link>
-            <Link onClick={() => setIsMenuOpen(false)} href="">
-              <Image width={20} src={kh} alt="flag" />
-            </Link>
+            <div className="flex h-full items-center justify-center">
+              <LocaleSwitcher />
+            </div>
           </div>
           <div className="block min-[1200px]:hidden">
             <FontAwesomeIcon

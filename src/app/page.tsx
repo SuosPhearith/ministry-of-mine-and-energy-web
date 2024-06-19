@@ -7,6 +7,11 @@ import Organization from "@/components/Frontend/Home/Organization";
 import Service from "@/components/Frontend/Home/Service";
 import Work from "@/components/Frontend/Home/Work";
 import { Metadata } from "next";
+// import { useTranslations } from "next-intl";
+// const t = useTranslations("Index");
+// {
+//   t("title");
+// }
 export const metadata: Metadata = {
   title: "ក្រសួងរ៉ែ និងថាមពល",
   description: "MME - Website",
